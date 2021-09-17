@@ -1,6 +1,29 @@
+#!/usr/bin/python3
+"""
+#############################################################################
+#                               DNS-Lookup                                  #
+#############################################################################
+# Copyright 2021 Alchemists                                                 #
+#############################################################################
+# A DNS-Lookup (c) 2021, This work is marked with CC0 1.0 Universal.        #
+# To view a copy of this license, visit                                     #
+#                                                                           #
+# http://creativecommons.org/publicdomain/zero/1.0                          #
+#                                                                           #
+# Unless required by applicable law or agreed to in writing, software       #
+# distributed under the License is distributed on an "AS IS" BASIS,         #
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  #
+# See the License for the specific language governing permissions and       #
+# limitations under the License.                                            #
+#############################################################################
+#                               ABOUT Alchemists                            #
+#############################################################################
+#           |   Github      |   Twitter     |   GMail                       #
+############|###############|###############|################################
+# Developer |   hexdee606   |   hexdee606   |   hexdee606                   #
+#############################################################################
 """
 
-"""
 import sys
 from os import name, system
 
@@ -27,6 +50,27 @@ def resolve_dns(dns_server, path_of_domain_name_list):
             total_domains += 1
 
         # print out put message
+        
+        print("|---------------------------------------------------------------------------------------------|")
+        print("|                                       DNS-Lookup                                            |")
+        print("|---------------------------------------------------------------------------------------------|")
+        print("| Copyright 2021 Alchemists                                                                   |")
+        print("|---------------------------------------------------------------------------------------------|")
+        print("| A DNS-Lookup (c) 2021, This work is marked with CC0 1.0 Universal.                          |")
+        print("| To view a copy of this license, visit                                                       |")
+        print("|                                                                                             |")
+        print("| http://creativecommons.org/publicdomain/zero/1.0                                            |")
+        print("|                                                                                             |")
+        print("| Unless required by applicable law or agreed to in writing, software distributed under       |")
+        print("| the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY   |")
+        print("| KIND, either express or implied. See the License for the specific language governing        |")
+        print("| permissions and limitations under the License.                                              |")
+        print("|---------------------------------------------------------------------------------------------|")
+        print("|                                        ABOUT Alchemists                                     |")
+        print("|---------------------------------------------------------------------------------------------|")
+        print("|                |      Github       |      Twitter      |      GMail                         |")
+        print("|---------------------------------------------------------------------------------------------|")
+        print("| Developer      |      hexdee606    |      hexdee606    |      hexdee606                     |")
         print("|---------------------------------------------------------------------------------------------|")
         print("| DNS Lookup (Version 1.0 - Beta)                                                             |")
         print("|---------------------------------------------------------------------------------------------|")
@@ -36,23 +80,37 @@ def resolve_dns(dns_server, path_of_domain_name_list):
         print("|---------------------------------------------------------------------------------------------|")
         print("| {:<10} | {:<15} | {:<60} |".format('Sr. Number', 'Resolved Add.', 'Domain name'))
         print("|---------------------------------------------------------------------------------------------|")
-
-        results.append("|---------------------------------------------------------------------------------------------|"
-                       )
-        results.append("| DNS Lookup (Version 1.0 - Beta)                                                             |"
-                       )
-        results.append("|---------------------------------------------------------------------------------------------|"
-                       )
-        results.append("| USE CTRL + C to Exit this code                                                              |"
-                       )
-        results.append("|---------------------------------------------------------------------------------------------|"
-                       )
+        
+        results.append("|---------------------------------------------------------------------------------------------|")
+        results.append("|                                       DNS-Lookup                                            |")
+        results.append("|---------------------------------------------------------------------------------------------|")
+        results.append("| Copyright 2021 Alchemists                                                                   |")
+        results.append("|---------------------------------------------------------------------------------------------|")
+        results.append("| A DNS-Lookup (c) 2021, This work is marked with CC0 1.0 Universal.                          |")
+        results.append("| To view a copy of this license, visit                                                       |")
+        results.append("|                                                                                             |")
+        results.append("| http://creativecommons.org/publicdomain/zero/1.0                                            |")
+        results.append("|                                                                                             |")
+        results.append("| Unless required by applicable law or agreed to in writing, software distributed under       |")
+        results.append("| the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY   |")
+        results.append("| KIND, either express or implied. See the License for the specific language governing        |")
+        results.append("| permissions and limitations under the License.                                              |")
+        results.append("|---------------------------------------------------------------------------------------------|")
+        results.append("|                                        ABOUT Alchemists                                     |")
+        results.append("|---------------------------------------------------------------------------------------------|")
+        results.append("|                |      Github       |      Twitter      |      GMail                         |")
+        results.append("|---------------------------------------------------------------------------------------------|")
+        results.append("| Developer      |      hexdee606    |      hexdee606    |      hexdee606                     |")
+        results.append("|---------------------------------------------------------------------------------------------|")
+        results.append("| DNS Lookup (Version 1.1 - Beta)                                                             |")
+        results.append("|---------------------------------------------------------------------------------------------|")
+        results.append("| USE CTRL + C to Exit this code                                                              |")
+        results.append("|---------------------------------------------------------------------------------------------|")
         results.append("| {:<28} | {:<60} |".format('Total numbers of domains', total_domains))
-        results.append("|---------------------------------------------------------------------------------------------|"
-                       )
+        results.append("|---------------------------------------------------------------------------------------------|")
         results.append("| {:<10} | {:<15} | {:<60} |".format('Sr. Number', 'Resolved Add.', 'Domain name'))
-        results.append("|---------------------------------------------------------------------------------------------|"
-                       )
+        results.append("|---------------------------------------------------------------------------------------------|")
+       
 
         # Push request to dns to resolve domain name
         for domain_name in domain_name_list:
@@ -92,19 +150,49 @@ def resolve_dns(dns_server, path_of_domain_name_list):
 
 
 if __name__ == '__main__':
-    print("|---------------------------------------------------------------------------------------------|")
-    print("| DNS Lookup (Version 1.0 - Beta)                                                             |")
-    print("|---------------------------------------------------------------------------------------------|")
-    print("| Please enter following details:                                                             |")
-    print("|---------------------------------------------------------------------------------------------|")
-    user_input_dns_server = input('Enter Domain Name Server (DNS)\t:\t')
-    print("|---------------------------------------------------------------------------------------------|")
-    user_input_domain_name_list = input('Enter path of domain name list (Ex. \'\\user\\domain.txt\')\t:\t')
-    print("|---------------------------------------------------------------------------------------------|")
+    try:
+        print("|---------------------------------------------------------------------------------------------|")
+        print("|                                       DNS-Lookup                                            |")
+        print("|---------------------------------------------------------------------------------------------|")
+        print("| Copyright 2021 Alchemists                                                                   |")
+        print("|---------------------------------------------------------------------------------------------|")
+        print("| A DNS-Lookup (c) 2021, This work is marked with CC0 1.0 Universal.                          |")
+        print("| To view a copy of this license, visit                                                       |")
+        print("|                                                                                             |")
+        print("| http://creativecommons.org/publicdomain/zero/1.0                                            |")
+        print("|                                                                                             |")
+        print("| Unless required by applicable law or agreed to in writing, software distributed under       |")
+        print("| the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY   |")
+        print("| KIND, either express or implied. See the License for the specific language governing        |")
+        print("| permissions and limitations under the License.                                              |")
+        print("|---------------------------------------------------------------------------------------------|")
+        print("|                                        ABOUT Alchemists                                     |")
+        print("|---------------------------------------------------------------------------------------------|")
+        print("|                |      Github       |      Twitter      |      GMail                         |")
+        print("|---------------------------------------------------------------------------------------------|")
+        print("| Developer      |      hexdee606    |      hexdee606    |      hexdee606                     |")
+        print("|---------------------------------------------------------------------------------------------|")
+        print("| DNS Lookup (Version 1.1 - Beta)                                                             |")
+        print("|---------------------------------------------------------------------------------------------|")
+        print("| USE CTRL + C to Exit this code                                                              |")
+        print("|---------------------------------------------------------------------------------------------|")
+        print("| Please enter following details:                                                             |")
+        print("|---------------------------------------------------------------------------------------------|")
+        user_input_dns_server = input('Enter Domain Name Server (DNS)\t:\t')
+        print("|---------------------------------------------------------------------------------------------|")
+        user_input_domain_name_list = input('Enter path of domain name list (Ex. \'\\user\\domain.txt\')\t:\t')
+        print("|---------------------------------------------------------------------------------------------|")
 
-    if name == 'nt':
-        _ = system('cls')
-    else:
-        _ = system('clear')
+        if name == 'nt':
+            _ = system('cls')
+        else:
+            _ = system('clear')
 
-    resolve_dns(user_input_dns_server, user_input_domain_name_list)
+        resolve_dns(user_input_dns_server, user_input_domain_name_list)
+        
+    except KeyboardInterrupt:
+        print("|---------------------------------------------------------------------------------------------|")
+        print("| {:<91} |".format('Process cancelled by user.'))
+        print("|---------------------------------------------------------------------------------------------|")
+    finally:
+        pass
