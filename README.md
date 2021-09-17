@@ -23,9 +23,12 @@
  
 ## **Features** 
 
-1. Find common subdomain's of targeted website.
-2. Passively scan websites.
-3. Scans upto 1000 common subdomains.
+1. scan domains in targeted dns server
+2. list of domains are in text format
+3. scans upto 10,000 domains in min time ( approx 15 min on 1MB/s Bandwidth).
+4. Supports Windows & Linux OS.
+5. organised ip resolution.
+6. Forword DNS Lookup.
 
 
 ## **Required packages**
