@@ -76,7 +76,7 @@ pip3 install dnspython
 
 >**Calling `python3` file**
 ```console 
- python3 DNS_Look.py.py
+ python3 DNS_Look.py
 ```
 ## Connect Us
 
